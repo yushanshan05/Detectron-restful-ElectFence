@@ -13,11 +13,11 @@ RUN make install
 
 # Clone the Detectron repository
 #RUN git clone https://github.com/facebookresearch/detectron /detectron
-RUN git clone https://github.com/lg12170226/Detectron-restful /detectron
+RUN git clone https://github.com/yushanshan05/Detectron-restful-ElectFence /detectron
 
 
-COPY retinanet.yaml /detectron/restful/model/
-COPY model.pkl /detectron/restful/model/
+#COPY retinanet.yaml /detectron/restful/model/
+#COPY model.pkl /detectron/restful/model/
 
 # Set up Python modules
 WORKDIR /detectron/lib
